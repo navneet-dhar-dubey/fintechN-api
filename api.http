@@ -1,0 +1,81 @@
+### api.http
+
+###
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+
+{
+    "username": "user4",
+    "password": "chai1234"
+}
+
+###
+GET http://127.0.0.1:8000/api/categories/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0Njc3NDU3LCJpYXQiOjE3NTQ2NzcxNTcsImp0aSI6IjUwOWVhN2MyODQyZTQwNTliMjA5OTI5MTdhMWZmNGI0IiwidXNlcl9pZCI6IjIifQ.0C3OMXHLb-5zT88iJD3mKANHxxiHh4ni0cwmbFm0T6E
+Content-Type: application/json
+
+
+###
+POST  http://127.0.0.1:8000/api/categories/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0Njc3NDU3LCJpYXQiOjE3NTQ2NzcxNTcsImp0aSI6IjUwOWVhN2MyODQyZTQwNTliMjA5OTI5MTdhMWZmNGI0IiwidXNlcl9pZCI6IjIifQ.0C3OMXHLb-5zT88iJD3mKANHxxiHh4ni0cwmbFm0T6E
+Content-Type: application/json
+
+{
+    "name": "Groceries"
+}
+
+
+
+###
+GET   http://127.0.0.1:8000/api/transactions/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0Njc3NDU3LCJpYXQiOjE3NTQ2NzcxNTcsImp0aSI6IjUwOWVhN2MyODQyZTQwNTliMjA5OTI5MTdhMWZmNGI0IiwidXNlcl9pZCI6IjIifQ.0C3OMXHLb-5zT88iJD3mKANHxxiHh4ni0cwmbFm0T6E
+Content-Type: application/json
+
+
+
+###
+POST  http://127.0.0.1:8000/api/transactions/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NjgxNDg4LCJpYXQiOjE3NTQ2Nzc4ODgsImp0aSI6ImJhNTRjZjcyZDIwZDRkODJhZDc0ZTBhNmZjNDE1NzQ3IiwidXNlcl9pZCI6IjIifQ.CPLPguwRfs40TxO6EBXrlHXMj_z9TWUNfTIe7jAvXGo
+Content-Type: application/json
+
+{
+    "category": "2",
+    "amount": "67",
+    "type":"EXPENSE"
+}
+
+
+###
+POST http://127.0.0.1:8000/api/register/
+Content-Type: application/json
+
+{
+    "username":"navneet",
+    "password":"1234"
+}
+
+
+###
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+
+{
+    "username": "alexandrahansen",
+    "password": "password123"
+}
+
+
+###
+POST http://127.0.0.1:8000/api/reports/email-summary/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NzcwMjMyLCJpYXQiOjE3NTQ3NjY2MzIsImp0aSI6IjlkYmVjZWVlNDE0MzQ5ZDE5YzM3OTNmMWViZjJmYmU5IiwidXNlcl9pZCI6IjkifQ.KSre0VR7NiA40-Y-AsxmjjsNddDAuZQJFf5OttM70SA
+
+
+
+###
+GET http://127.0.0.1:8000/api/transactions/export/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0ODQ4ODk2LCJpYXQiOjE3NTQ4NDUyOTYsImp0aSI6IjIwZDBmZGExMzkyYzRiYWU5ZmVkMzI5YmY3YmNmMjlhIiwidXNlcl9pZCI6IjEzIn0.QlvN8W8C4OkLubJpqiEDublHfnrVbHK6E1hmv9ULYZg
+
+
+
